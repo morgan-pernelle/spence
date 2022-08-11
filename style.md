@@ -13,3 +13,5 @@ Extra large = 1200px - ~~
 Background = #F0EEEB
 Almost black = #292929
 Dark text = #5A5444
+Darker text = #292929
+Gray text = #9E9E9E

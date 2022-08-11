@@ -11,7 +11,6 @@
   <title>Spence</title>
 </head>
 <body>
-  <div class="app-wrapper">
 
     <div class="banner">
       <p>To celebrate Spense's launch, we will be waiving all fees for the entire month of April. <u>You will be receiving 100% of the earnings.</u></p>
@@ -46,8 +45,10 @@
           </li>
         </ul>
       </div>
-      <input type="email" placeholder="john@example.com">
-      <button type="button">Get Started</button>
+      <div class="intro-inputs">
+        <input id="email" type="email" placeholder="john@example.com">
+        <button id="send" type="button">Get Started</button>
+      </div>
     </div>
 
     <div class="brands">
@@ -61,7 +62,7 @@
     <div class="secure">
       <h2 class="secure-title">Secure your money with Escrow</h2>
       <p class="secure-desc">Spence uses Escrow to secure all payments. We believe Escrow offers the highest level of security for your payments, so you never need to worry about scams.</p>
-      <a href="#" class="secure-link">Learn more about Escrow ></a>
+      <a href="#" class="secure-link">Learn more about Escrow</a>
       <img src="../Assets/Phone Mockup (Mobile).png" alt="phone mockup">
     </div>
 
@@ -80,9 +81,11 @@
       <div class="footer-menu">
         <div class="footer-menu-cats">
           <h3 class="footer-menu-item">Company</h3>
-          <a href="#" class="footer-menu-link">About</a>
-          <a href="#" class="footer-menu-link">Customers</a>
-          <a href="#" class="footer-menu-link">Blog</a>
+          <div class="footer-menu-list"> 
+            <a href="#" class="footer-menu-link">About</a>
+            <a href="#" class="footer-menu-link">Customers</a>
+            <a href="#" class="footer-menu-link">Blog</a>
+          </div>
         </div>
         <div class="footer-menu-cats">
           <h3 class="footer-menu-item">Opportunities</h3>
@@ -90,17 +93,20 @@
         </div>
         <div class="footer-menu-cats">
           <h3 class="footer-menu-item">Sitemap</h3>
-          <a href="#" class="footer-menu-link">Homepage</a>
+          <div class="footer-menu-list">
+            <a href="#" class="footer-menu-link">Homepage</a>
+          </div>
         </div>
         <div class="footer-menu-cats">
           <h3 class="footer-menu-item">Resources</h3>
-          <a href="#" class="footer-menu-link">Support</a>
-          <a href="#" class="footer-menu-link">Contact</a>
-          <a href="#" class="footer-menu-link">FAQ</a>
+          <div class="footer-menu-list">
+            <a href="#" class="footer-menu-link">Support</a>
+            <a href="#" class="footer-menu-link">Contact</a>
+            <a href="#" class="footer-menu-link">FAQ</a>
+          </div>
         </div>
       </div>
     </div>
 
-  </div>
 </body>
 </html>
