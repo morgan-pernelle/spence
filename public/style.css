@@ -414,9 +414,15 @@ body {
 }
 
 @media screen and (min-width: 821px) {
+
   .burger,
   .burger-open {
     display: none;
+  }
+
+  .header {
+    padding-left: 4em;
+    padding-right: 4em;
   }
 
   .nav {
@@ -439,10 +445,88 @@ body {
   }
 
   .intro {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    padding-left: 4em;
+    padding-right: 4em;
+    max-width: 75%;
+    margin-top: 4em;
+    border-radius: 1em;
+  }
+
+  .intro-content {
+    order: 1;
+  }
+
+  .intro-title {
+    font-size: 2.5em;
   }
 
   .intro-img {
-    width: 50px;
+    order: 2;
+    width: 40%;
+    height: 30em;
+    object-fit: contain;
+    margin-left: 2em;
+  }
+
+  .brands-wrapper {
+    padding-left: 4em;
+    padding-right: 4em;
+    width: 60%;
+  }
+
+  .secure {
+    max-width: 75%;
+    display: flex;
+  }
+
+  .secure-title {
+    padding: 2em;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .secure-desc {
+    margin-left: 4em;
+  }
+
+  .secure-link {
+    margin-left: 4em;
+  }
+
+  .editor {
+    max-width: 65%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4em;
+  }
+
+  .editor-content {
+    order: 2;
+  }
+
+  .editor img {
+    order: 1;
+    width: 50%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-reminder {
+    width: 40%;
+  }
+
+  .footer-menu {
+    margin-top: 3em;
+    flex-wrap: nowrap;
+  }
+
+  .footer-menu-cats {
+    padding: 1em;
   }
 }
