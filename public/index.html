@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./_reset.css">
   <link rel="stylesheet" href="./style.css">
   <title>Spence</title>
 </head>
@@ -20,9 +21,19 @@
       <div class="header-logo">
         <h1>spense.</h1>
       </div>
-      <div class="burger">
-        <img src="../Assets/Hamburger Menu.svg" alt="burger menu">
+      <div class="burger" id="sidenav">
+        <a class="burger-close" id="close-btn" href="#">x</a>
+        <ul>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Get Started</a></li>
+        </ul>
       </div>
+      <a href="#" class="burger-open" id="open-btn">
+        <img src="../Assets/Hamburger Menu.svg" alt="burger menu">
+      </a>
     </div>
 
     <div class="intro">
@@ -75,7 +86,7 @@
 
     <div class="footer">
       <div class="footer-reminder">
-        <h3 class="footer-menu-item">spense.</h3>
+        <h3 class="footer-menu-item" id="footer-brand">spense.</h3>
         <p class="footer-reminder-text">Spence is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing <i>just</i> that.</p>
       </div>
       <div class="footer-menu">
@@ -108,5 +119,6 @@
       </div>
     </div>
 
+  <script src="./index.js"></script>
 </body>
 </html>

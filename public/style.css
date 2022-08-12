@@ -1,9 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 html {
   all: none;
   font-family: 'Open Sans', sans-serif;
 }
 
 body {
+  width: 100%;
   background: #fff;
 }
 
@@ -11,18 +17,19 @@ body {
   background-color: #000;
   color: #fff;
   text-align: center;
-  font-size: 1.125em;
+  font-size: 1em;
   width: 100%;
-  height: 10vh;
 }
 
 .banner p {
-  margin: 0;
+  padding: 2em;
+  font-weight: 700;
+  line-height: 1.3em;
 }
 
 .header {
   background-color: #F0EEEB;
-
+  padding: auto 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,15 +37,54 @@ body {
 }
 
 .header-logo {
-  font-size: 12px;
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
-.burger img {
-  width: 2em;
+.burger {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: -250px;
+  background-color: #fff;
+  padding-top: 60px;
+  transition: right .5s ease;
+}
+
+.burger a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #5A5444;
+  display: block;
+  transition: .3s;
+}
+
+.burger a:hover {
+  color: #000;
+}
+
+.burger ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.burger.active {
+  right: 0;
+}
+
+.burger-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
 }
 
 .intro {
   margin: auto;
+  padding: .5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,14 +99,17 @@ body {
 .intro-title {
   color: #292929;
   font-size: 2em;
-  margin: 1.7em auto 0 .3em;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: .5em;
+  margin-left: .3em;
 }
 
 .intro-desc {
   font-weight: 500;
-  margin: 1em;
-  margin-left: .3em;
-  margin-bottom: 0;
+  margin-left: .6em;
+  line-height: 1.7em;
+  margin-bottom: .5em;
 }
 
 .service {
@@ -89,14 +138,15 @@ body {
 }
 
 .intro-inputs {
+  margin-top: 1em;
   display: flex;
-  width: 99%;
+  width: 100%;
   justify-content: space-evenly;
   margin-bottom: 2em;
 }
 
 #email {
-  width: 40%;
+  width: 55%;
   padding: 1em;
   font-size: 1em;
   border: 1px solid gray;
@@ -108,7 +158,7 @@ body {
   background-color: #000;
   border: none;
   border-radius: .3em;
-  width: 40%;
+  width: 35%;
   font-size: 1.125em;
   font-weight: 700;
 }
@@ -118,6 +168,7 @@ body {
   list-style-type: none;
   padding: 0;
   width: 95%;
+  margin: 2em auto;
 }
 
 .brands-wrapper li img {
@@ -134,57 +185,83 @@ body {
 
 .secure-title {
   color: #292929;
-  width: 60%;
+  width: 70%;
   padding: 1em;
   padding-bottom: 0;
-  margin-bottom: 0;
   font-size: 2em;
+  font-weight: 700;
+  line-height: 1.3em;
+  margin-bottom: .5em;
 }
 
 .secure-desc {
   color: #5A5444;
   margin-left: 2em;
   margin-right: 2em;
+  line-height: 1.7em;
+  margin-bottom: 1.5em;
 }
 
 .secure-link {
   margin: auto 2em;
-  color: #292929;
+  color: #5A5444;
   font-weight: 700;
 }
 
 .editor {
-  /* width: 90%; */
+  width: 95%;
 }
 
 .editor-title {
   font-size: 2em;
   color: #292929;
+  font-weight: 700;
+  line-height: 1.3em;
+  padding: 1em;
+  padding-left: .5em;
+  padding-bottom: 0;
 }
 
 .editor-desc {
   color: #5A5444;
+  margin-left: 1em;
+  margin-top: 1em;
+  line-height: 1.7em;
+  margin-bottom: 1.5em;
 }
 
 .editor-link {
-  margin: auto 2em;
+  margin: auto 1em;
   color: #292929;
   font-weight: 700;
 }
 
 .editor img {
   width: 100%;
+  margin-top: 2em;
 }
 
 .footer {
   background-color: #000;
-  color: #fff;
   padding: 1em;
+}
+
+#footer-brand {
+  font-size: 1.3em;
+  margin-top: 2.5em;
+  margin-bottom: .7em;
+}
+
+.footer-reminder-text {
+  color: gray;
+  line-height: 1.5em;
+  margin-bottom: 2em;
 }
 
 .footer-menu {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 2em;
 }
 
 .footer-menu-cats {
@@ -194,14 +271,17 @@ body {
 .footer-menu-list {
   display: flex;
   flex-direction: column;
-  line-height: 2em;
+  margin-bottom: 1em;
 }
 
-.footer-reminder-text,
-.footer-menu-link {
-  color: #9E9E9E;
+.footer-menu-item {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1em;
 }
 
 .footer-menu-link {
+  margin: .5em;
   text-decoration: none;
+  color: gray;
 }
